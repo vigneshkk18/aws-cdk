@@ -73,6 +73,21 @@ export class TestAuthReactAppStack extends cdk.Stack {
             VITE_AWS_USER_POOL_CLIENT_ID: {
               value: process.env.UserPoolClientId,
             },
+            VITE_AWS_USER_POOL_DOMAIN: {
+              value: process.env.UserPoolDomain,
+            },
+            VITE_AWS_REDIRECT_SIGNIN: {
+              value: process.env.RedirectSignIn,
+            },
+            VITE_AWS_REDIRECT_SIGNOUT: {
+              value: process.env.RedirectSignOut,
+            },
+            VITE_AWS_API_ENDPOINT: {
+              value: process.env.ApiEndpoint,
+            },
+            VITE_AWS_API_ENDPOINT_REGION: {
+              value: process.env.ApiEndpointRegion,
+            },
           },
         },
       }
